@@ -22,7 +22,7 @@ jobs:
           npm install
 
       - name: Run script
-        run: node Profile-Widgets/main.js
+        run: npm start
 
       - name: Commit and push changes
         run: |
