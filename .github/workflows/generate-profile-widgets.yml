@@ -30,6 +30,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          ls -r *
           git add Profile-Widgets/screenshots/widgets/*.svg
           git commit -m "Update widgets"
           git push
