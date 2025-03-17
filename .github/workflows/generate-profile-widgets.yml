@@ -30,6 +30,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # Delete the current widgets directory and copy the new one
+          rm -rf widgets
           cp -r Profile-Widgets/widgets widgets
           git add widgets
           git commit -m "Update widgets" || echo "No changes to commit"
